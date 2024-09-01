@@ -1,0 +1,71 @@
+.table-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 1500px;
+    margin-left: 0px;
+    padding-left: 200px;    
+  }
+ 
+  table {
+    width: 100%; 
+    max-width: 2000px; /* Adjust this based on your design */
+    border-collapse: collapse; /* Ensures padding adds to cell size */
+  }
+
+  table th:first-child /* Width, Padding and Gap for Name heading */
+  {
+    width: 100%;    
+    padding-left: 0px;
+    padding-right: -300px;               
+  }
+
+  table th:nth-child(2) {
+    width: 300px; /* Increased width for the Price column */
+    margin-left: 500px;
+}
+
+  table th:first-child, /* Name heading */
+  table th:nth-child(2) /* Price heading */ 
+  {
+    background-color: lightgrey;
+    color: grey;    
+  }
+  
+  table th,
+  table td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 300px;
+    text-align: center; /* Ensures content is aligned as per requirement */
+  }
+    
+  td:first-child {
+    width: 300px; /* Width for the Name column */        
+    padding-left: 0px; /* Add padding to simulate margin */    
+  }
+  
+  table th:nth-child(2) {
+    width: 150px; /* Width for the Price column */
+    padding-right: -200px;
+  }
+
+   th:last-child,
+  .search-bar {
+    width: 100%; /* Make the search bar take up 100% of its parent width */
+    margin-bottom: 20px; /* Optional: Adds some space below the search bar */
+}
+
+.search-bar input {
+    width: 80%; /* Make the input inside the search bar take up 100% of the search bar's width */
+    padding: 8px; /* Adjust padding as needed for better spacing */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+div.search-title {
+  padding-bottom: 15px !important;
+}
+
+.in-stock-filter {
+  padding-bottom: 50px;
+}
